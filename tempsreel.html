@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="tempsreel.css">
+    <title> Cours en Temps Réel - Portefeuille Numérique </title>
+</head>
+<body>
+    <div class="menu4">
+
+    <nav class="menu">
+
+        <a class="active" href="index.html"> <i class="fas fa-home"></i>Page D'accueil</a>
+        <br>
+        <a href="dashboard.html"> <i class="fas fa-tachometer-alt"></i>Tableau de bord</a>
+        <br>
+        <a href="accounts.html"><i class="fas fa-wallet"></i>Gestion de Portefeuille</a>
+        <br>
+        <a href="tempsreel.html"><i class="fas fa-chart-line"></i>Cours en Temps Réel </a>
+        <br>
+        <a href="profile.html"><i class="fas fa-user"></i>Profil Utilisateur</a>
+        <br>
+        <a href="support.html"><i class="fas fa-life-ring"></i>Support et Ressources</a>
+
+
+    </nav>
+
+    <div class="tempsreel">
+        
+        <div id="crypto-prices">
+            <h1>Current Cryptocurrency Prices</h1>
+            <ul id="prices-list"></ul>
+        </div>
+        <div id="chart-container">
+            <canvas id="price-chart"></canvas>
+        </div>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for a cryptocurrency">
+            <ul id="search-results"></ul>
+        </div>
+    
+        
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0"></script>
+
+    <script src="tempsreel.js"></script>
+</body>
+</html>

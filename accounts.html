@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Gestion des Comptes - Portefeuille Numérique</title>
+    <link rel="stylesheet" href="accounts.css">
+  
+</head>
+<body>
+    <div class="menu3">
+    <nav class="menu">
+
+        <a class="active" href="index.html"> <i class="fas fa-home"></i>Page D'accueil</a>
+        <br>
+        <a href="dashboard.html"> <i class="fas fa-tachometer-alt"></i>Tableau de bord</a>
+        <br>
+        <a href="accounts.html"><i class="fas fa-wallet"></i>Gestion de Portefeuille</a>
+        <br>
+        <a href="tempsreel.html"><i class="fas fa-chart-line"></i>Cours en Temps Réel </a>
+        <br>
+        <a href="profile.html"><i class="fas fa-user"></i>Profil Utilisateur</a>
+        <br>
+        <a href="support.html"><i class="fas fa-life-ring"></i>Support et Ressources</a>
+    </nav>
+<div class="compte">
+    <h1> Gestion des Comptes :</h1>
+    <br>
+    <section>
+        <h2>Ajouter une cryptomonnaie</h2>
+        <form action="#">
+            <input type="text" id="crypto-name" placeholder="Nom de la cryptomonnaie" required> <br>
+            <input type="number"  id="crypto-montant" placeholder="Montant" required> <br>
+            <button onclick="ajouter()">Ajouter</button> <br>
+        </form>
+    </section>
+    <br>
+    <section>
+        <h2>Supprimer une cryptomonnaie</h2>
+        <form action="#">
+        <input type="text" name=""  id="crypto-name-remove" placeholder="Nom de la cryptomonnaie" required> <br>
+        <button onclick="supprimer()">Supprimer</button>
+        </form>
+    </section>
+<br>
+    <section>
+        <h2> Acheter des cryptomonnaies </h2>
+        <form action="#">
+            <input type="text" id="cryptomonnaie-name" placeholder="Nom de la cryptomonnaie" required> <br>
+            <input type="number" id="cryptomonnaie-montant" placeholder="Montant" required> <br>
+            <button onclick="acheter()">Acheté</button>
+        </form>
+    </section>
+    <br>
+    <section>
+        <h2>Historique des transactions</h2>
+        <button onclick="historique()">Voir l'historique</button> <br>
+        <div id="histoire-list"></div>
+    </section>
+</div>
+    </div>
+    <script src="accounts.js"></script> 
+
+</body>
+</html>

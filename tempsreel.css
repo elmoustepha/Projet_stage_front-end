@@ -1,0 +1,82 @@
+body{
+    background-color: rgba(245, 243, 243, 0.856);
+    color: rgb(8, 8, 8);
+    font-style: italic;
+    width: 100%;
+    height: 100%;
+}
+
+.menu4{
+    display: flex; /* Utilisation de flexbox */
+}
+
+.menu{
+
+    background-color: rgb(163, 161, 161);
+    float: left;
+    position: fixed;
+    clear: both;
+    width: 23%;
+    height: auto;
+    padding: 15px;
+    border-radius: 11px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+   transition: 0.5s;
+   color: rgb(5, 5, 5);
+    padding: 30px;
+    margin: 1px;
+    border-radius: 8px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  gap: 20px;
+}
+
+
+.menu a:hover, .active{
+    background-color: rgb(235, 232, 232);
+    color: #001;
+    font-size: 22px;
+}
+
+.menu a:active{
+
+background-color: red;
+cursor: pointer;
+
+}
+
+.tempsreel{
+        float: right;
+        clear: both;
+        top: 0%;
+        left: 50%;
+        transform: translate(90% , 0%);
+        font-size: 21px;
+}
+#crypto-prices {
+    margin-bottom: 20px;
+}
+
+#chart-container {
+    margin-bottom: 20px;
+}
+
+#search-container {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#prices-list, #search-results {
+    list-style-type: none;
+     padding: 0;
+}

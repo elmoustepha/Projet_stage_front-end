@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="index.css">
+    <title> Page D'accueil - Portefeuille Numérique  </title>
+</head>
+<body>
+    <div class="menu1">
+  <!-- balise nav pour la menu    -->
+    <nav class="menu">
+
+        <a class="active" href="index.html"> <i class="fas fa-home"></i>Page D'accueil</a>
+        <br>
+        <a href="dashboard.html"> <i class="fas fa-tachometer-alt"></i>Tableau de bord</a>
+        <br>
+        <a href="accounts.html"><i class="fas fa-wallet"></i>Gestion de Portefeuille</a>
+        <br>
+        <a href="tempsreel.html"><i class="fas fa-chart-line"></i>Cours en Temps Réel </a>
+        <br>
+        <a href="profile.html"><i class="fas fa-user"></i>Profil Utilisateur</a>
+        <br>
+        <a href="support.html"><i class="fas fa-life-ring"></i>Support et Ressources</a>
+
+    </nav>
+  <!-- balise div pour les contenu du page 'Page D'accueil'   -->
+    <div class="accueil">
+          <!-- balise h1 pour le titre du page -Page D'accueil-  -->
+  <h1> Page D'accueil : </h1>
+  
+<br>
+<h2 style="color: rgb(4, 21, 255); font-size: 29px;">Cette page pour portefeuille crypto-monnaies </h2>
+  <!-- 1er balise section pour la partie servicses offerts -->
+<section>
+<h2> Services offerts :</h2>
+<p>Gestion de portefeuille et échange des cryptomonnaies.</p>
+</section>
+  <!-- 2eme balise section pour la partie connexion  -->
+  <section>
+     <h2>connexion</h2>
+       <!-- 1er formulaire pour la connexion  -->
+     <form action="#">
+        <input type="email"  id="login-email" placeholder="email" required><br>
+        <input type="password"  id="login-password" placeholder="mot de passe" required><br>
+        <button  onclick="connecter()"> Se connecter</button>
+     </form>
+  </section>
+   <!-- 3eme balise section pour la partie l'inscription  -->
+<section>
+    <h2>Inscription</h2>
+    <!-- 2eme formulaire pour l'inscription  -->
+    <form action="#">
+        <input type="text" id="inscription-name" placeholder="Nom dutilisaterur" required><br>
+        <input type="email" id="inscription-email" placeholder="Email" required><br>
+        <input type="password" id="inscription-password" placeholder="Mot de passe" required><br>
+        <button onclick="inscrire()"> S'inscrire</button>
+    </form>
+</section>
+<br>
+<br>
+   <!-- balise div pour la partie du cryptomonnaie supportees  -->
+<div>
+    <h2>Crypto-monnaie supportées :</h2>
+    <ul>
+        <li>Bitcoin</li>
+        <li>Ethereum</li>
+
+    </ul>
+</div>
+
+    </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
